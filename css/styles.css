@@ -242,22 +242,17 @@ figure {
   .site-footer {
     /* margin-left: 80px; */
     grid-column: 2 / 3;
-    display: grid;
+    background: #333;
+    color: #fff;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #333;
-    color: #fff;
-    align-items: center;
+    align-items: center; */
   }
 
-  /* .footer-nav {
-    background: #333;
-    color: #fff;
+  .footer-nav, .about {
     display: inline-block;
+    vertical-align: middle;
   }
-
-  .about {
-    display: inline-block;
-  } */
 }
 
 @media screen and (min-width: 992px) {
@@ -284,6 +279,21 @@ figure {
 
   .movie:not(:first-child) .movie-backdrop {
     display: none;
+  }
+
+  .footer-nav, .about {
+    padding: 1em 5em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main, .site-footer {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .site-footer {
+    width: 100%;
   }
 }
 
