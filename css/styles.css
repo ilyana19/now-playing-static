@@ -260,6 +260,32 @@ figure {
   } */
 }
 
+@media screen and (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .movie:first-child {
+    grid-column: span 3;
+  }
+
+  .movie:not(:first-child) .movie-overview {
+    display: none;
+  }
+
+  /* .movie-overview {
+    display: none;
+  } */
+
+  .movie:not(:first-child) .movie-poster {
+    display: block;
+  }
+
+  .movie:not(:first-child) .movie-backdrop {
+    display: none;
+  }
+}
 
 
 
