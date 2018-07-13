@@ -202,7 +202,13 @@ figure {
 @media screen and (min-width: 768px) {
   body {
     padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 80px 1fr;
   }
+
+  /* .site-header {
+    width: 80px;
+  } */
 
   .site-logo {
     z-index: 200;
@@ -226,7 +232,7 @@ figure {
   }
 
   main {
-    margin-left: 80px;
+    /* margin-left: 80px; */
   }
 
   .movie-overview {
@@ -234,10 +240,16 @@ figure {
   }
 
   .site-footer {
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #333;
+    color: #fff;
+    align-items: center;
   }
 
-  .footer-nav {
+  /* .footer-nav {
     background: #333;
     color: #fff;
     display: inline-block;
@@ -245,7 +257,7 @@ figure {
 
   .about {
     display: inline-block;
-  }
+  } */
 }
 
 
