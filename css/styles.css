@@ -200,7 +200,52 @@ figure {
 /*  Media queries
 ***********************************/
 @media screen and (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
 
+  .site-logo {
+    z-index: 200;
+    width: 50px;
+    left: 1rem;
+  }
+
+  .site-nav {
+    top: 0;
+    width: 80px;
+    height: 100%;
+  }
+
+  .site-nav-list {
+    margin-top: 4.5rem;
+  }
+
+  .site-nav-item {
+    float: none;
+    width: 100%;
+  }
+
+  main {
+    margin-left: 80px;
+  }
+
+  .movie-overview {
+    display: block;
+  }
+
+  .site-footer {
+    margin-left: 80px;
+  }
+
+  .footer-nav {
+    background: #333;
+    color: #fff;
+    display: inline-block;
+  }
+
+  .about {
+    display: inline-block;
+  }
 }
 
 
